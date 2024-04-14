@@ -2,4 +2,4 @@ torch
 torchvision
 streamlit
 joblib
-streamlit_drawable_canvas
+streamlit-drawable-canvas
