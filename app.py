@@ -35,9 +35,6 @@ bg_image = st.sidebar.file_uploader("Background image:", type=["png", "jpg"])
 
 realtime_update = st.sidebar.checkbox("Update in realtime", True)
 
-    
-
-
 
 # Function to preprocess the user's drawing and make a prediction
 def predict_digit(image):
@@ -49,8 +46,10 @@ def predict_digit(image):
 
 # Create the Streamlit app
 def main():
-    st.title("Digit Recognition App")
-
+    st.title("DB HW 2 - Digit Recognition App")
+    st.write("Youngmok Kim, 20224017")
+    st.write("This app uses a pre-trained CNN model to recognize hand-written digits.")
+    st.write("Draw a digit between 0 and 9 and click the 'Confirm' button to make a prediction.")
     # Create a canvas for the user to draw on
     # Create a canvas component
     canvas = st_canvas(
