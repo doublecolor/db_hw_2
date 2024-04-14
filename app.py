@@ -1,25 +1,27 @@
 import streamlit as st
-import torch
-from torchvision import transforms
 from PIL import Image
 
+import torch
+import torchvision.transforms as transforms
+
+import joblib
+
 # Load the pre-trained CNN model
-model = torch.load('pretrained_model.pth')
-model.eval()
+our_model = joblib.load('pretrained_model_joblib.pth')
 
 # Define the transformation to apply to the user's drawing
 transform = transforms.Compose([
-    transforms.Resize((28, 28)),
-    transforms.Grayscale(),
-    transforms.ToTensor(),
-    transforms.Normalize((0.5,), (0.5,))
+transforms.Resize((28, 28)),
+transforms.Grayscale(),
+transforms.ToTensor(),
+transforms.Normalize((0.5,), (0.5,))
 ])
 
 # Function to preprocess the user's drawing and make a prediction
 def predict_digit(image):
     image = transform(image).unsqueeze(0)
     with torch.no_grad():
-        output = model(image)
+        output = our_model(image)
         _, predicted = torch.max(output.data, 1)
         return predicted.item()
 
