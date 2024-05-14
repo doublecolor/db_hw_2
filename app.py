@@ -26,11 +26,11 @@ drawing_mode = st.sidebar.selectbox(
 #    "Drawing tool:", ("point", "freedraw", "line", "rect", "circle", "transform")
 )
 
-stroke_width = st.sidebar.slider("Stroke width: ", 30, 60, 40)
+stroke_width = st.sidebar.slider("Stroke width: ", 20, 60, 40)
 if drawing_mode == 'point':
     point_display_radius = st.sidebar.slider("Point display radius: ", 1, 25, 3)
-stroke_color = st.sidebar.color_picker("Stroke color hex: ")
-bg_color = st.sidebar.color_picker("Background color hex: ", "#fff")
+stroke_color = st.sidebar.color_picker("Stroke color hex: ", "#fff")
+bg_color = st.sidebar.color_picker("Background color hex: ")
 bg_image = st.sidebar.file_uploader("Background image:", type=["png", "jpg"])
 
 realtime_update = st.sidebar.checkbox("Update in realtime", True)
