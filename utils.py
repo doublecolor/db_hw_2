@@ -31,7 +31,60 @@ class CNN(nn.Module):
             output = self(x)
             _, predicted = torch.max(output.data, 1)
             return predicted.item()
+        
 
+def train_model(model, trainloader, criterion, optimizer, num_epochs=10):
+    # train model with MNIST dataset
+    for epoch in range(num_epochs):
+        running_loss = 0.0
+        for i, data in enumerate(trainloader, 0):
+            inputs, labels = data
+
+            optimizer.zero_grad()
+
+            outputs = model(inputs)
+            loss = criterion(outputs, labels)
+            loss.backward()
+            optimizer.step()
+
+            running_loss += loss.item()
+            if i % 100 == 99:
+                print('[%d, %5d] loss: %.3f' % (epoch + 1, i + 1, running_loss / 100))
+                running_loss = 0.0
+
+    print('Finished training')
+
+    # Save the trained model
+    torch.save(model, 'pretrained_model_torch.pth')
+
+    joblib.dump(model, 'pretrained_model_joblib.pth')
+
+def continual_learning(model, trainloader, criterion, optimizer, num_epochs=10):
+    # train model with MNIST dataset with continual learning
+    for epoch in range(num_epochs):
+        running_loss = 0.0
+        for i, data in enumerate(trainloader, 0):
+            inputs, labels = data
+
+            optimizer.zero_grad()
+
+            outputs = model(inputs)
+            loss = criterion(outputs, labels)
+            loss.backward()
+            optimizer.step()
+
+            running_loss += loss.item()
+            if i % 100 == 99:
+                print('[%d, %5d] loss: %.3f' % (epoch + 1, i + 1, running_loss / 100))
+                running_loss = 0.0
+
+    print('Finished training')
+
+    # Save the trained model
+    torch.save(model, 'pretrained_model_torch.pth')
+
+    joblib.dump(model, 'pretrained_model_joblib.pth')
+    
 def main():
     # Load the MNIST dataset
     transform = transforms.Compose([
