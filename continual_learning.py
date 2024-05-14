@@ -1,35 +1,54 @@
 import torch
 from torchvision import datasets, transforms
 
+from skimage.transform import resize
+
 import torch.nn as nn
 import torch.optim as optim
+import torch.nn.functional as F
+import numpy as np
 
 # Define the CNN module
 class CNN(nn.Module):
     def __init__(self):
         super(CNN, self).__init__()
-        self.conv1 = nn.Conv2d(1, 16, kernel_size=3, stride=1, padding=1)
-        self.relu = nn.ReLU()
-        self.maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
-        self.conv2 = nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1)
-        self.fc = nn.Linear(32 * 7 * 7, 10)
+        #design CNN model for SVHN dataset
+        self.conv1 = nn.Conv2d(3, 6, 5)
+        self.pool = nn.MaxPool2d(2, 2)
+        self.conv2 = nn.Conv2d(6, 16, 5)
+        self.fc1 = nn.Linear(16 * 5 * 5, 120)
+        self.fc2 = nn.Linear(120, 84)
+        self.fc3 = nn.Linear(84, 10)
 
     def forward(self, x):
-        x = self.conv1(x)
-        x = self.relu(x)
-        x = self.maxpool(x)
-        x = self.conv2(x)
-        x = self.relu(x)
-        x = self.maxpool(x)
-        x = x.view(x.size(0), -1)
-        x = self.fc(x)
+        x = self.pool(F.relu(self.conv1(x)))
+        x = self.pool(F.relu(self.conv2(x)))
+        x = x.view(-1, 16 * 5 * 5)
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = self.fc3(x)
         return x
-    
+
     def predict_dight(self, x):
         with torch.no_grad():
             output = self(x)
             _, predicted = torch.max(output.data, 1)
             return predicted.item()
+        
+def convert_mnist_to_svhn(mnist_dataset):
+    # Convert MNIST dataset to SVHN format
+    svhn_dataset = []
+    for image, label in mnist_dataset:
+        image = image.squeeze().numpy()
+        image = resize(image, (32, 32), mode='constant')
+        # print(image.shape)
+        image = np.stack((image,)*3, axis=-1)
+        # print(image.shape)
+        # image = (image - 0.1307) / 0.3081
+        image = torch.tensor(image).permute(2, 0, 1)
+        svhn_dataset.append((image, label))
+
+    return svhn_dataset
         
 def train_model(model, trainloader, criterion, optimizer, num_epochs=10):
     # train model with dataset
@@ -103,6 +122,9 @@ def main():
                                             transforms.ToTensor(),
                                             transforms.Normalize((0.1307,), (0.3081,))
                                         ]))
+    
+    expanded_mnist_train_dataset = convert_mnist_to_svhn(mnist_train_dataset)
+    expanded_mnist_test_dataset = convert_mnist_to_svhn(mnist_test_dataset)
 
     # Load the SVHN dataset
     svhn_train_dataset = datasets.SVHN('../data/svhn', split='train', download=True,
@@ -117,8 +139,8 @@ def main():
                                     ]))
 
     # Create data loaders
-    mnist_train_loader = torch.utils.data.DataLoader(mnist_train_dataset, batch_size=64, shuffle=True)
-    mnist_test_loader = torch.utils.data.DataLoader(mnist_test_dataset, batch_size=64, shuffle=False)
+    mnist_train_loader = torch.utils.data.DataLoader(expanded_mnist_train_dataset, batch_size=64, shuffle=True)
+    mnist_test_loader = torch.utils.data.DataLoader(expanded_mnist_test_dataset, batch_size=64, shuffle=False)
     svhn_train_loader = torch.utils.data.DataLoader(svhn_train_dataset, batch_size=64, shuffle=True)
     svhn_test_loader = torch.utils.data.DataLoader(svhn_test_dataset, batch_size=64, shuffle=False)
 
@@ -132,29 +154,15 @@ def main():
     # Train the model on the MNIST dataset
     train_model(model, mnist_train_loader, criterion, optimizer, num_epochs=10)
 
+    # Evaluate the model on the MNIST test set
+    print('Evaluating the model on the MNIST and SVHN test set')
+    ab_testing(mnist_test_loader, svhn_test_loader)
+
     # Train the model on the SVHN dataset
     train_model(model, svhn_train_loader, criterion, optimizer, num_epochs=10)
 
-    # Evaluate the model on the MNIST test set
-    model.eval()
-    mnist_correct = 0
-    with torch.no_grad():
-        for images, labels in mnist_test_loader:
-            output = model(images)
-            _, predicted = torch.max(output.data, 1)
-            mnist_correct += (predicted == labels).sum().item()
-    mnist_accuracy = mnist_correct / len(mnist_test_dataset)
-    print(f'MNIST Accuracy: {mnist_accuracy}')
-
-    # Evaluate the model on the SVHN test set
-    svhn_correct = 0
-    with torch.no_grad():
-        for images, labels in svhn_test_loader:
-            output = model(images)
-            _, predicted = torch.max(output.data, 1)
-            svhn_correct += (predicted == labels).sum().item()
-    svhn_accuracy = svhn_correct / len(svhn_test_dataset)
-    print(f'SVHN Accuracy: {svhn_accuracy}')
+    print('Evaluating the model on the MNIST and SVHN test set')
+    ab_testing(mnist_test_loader, svhn_test_loader)
 
     # Save the trained model
     torch.save(model, 'pretrained_model_torch.pth')

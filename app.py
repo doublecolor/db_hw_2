@@ -14,8 +14,7 @@ our_model = joblib.load('./pretrained_model_joblib.pth')
 
 # Define the transformation to apply to the user's drawing
 transform = transforms.Compose([
-transforms.Resize((28, 28)),
-transforms.Grayscale(),
+transforms.Resize((3, 32, 32)),
 transforms.ToTensor(),
 transforms.Normalize((0.5,), (0.5,))
 ])
