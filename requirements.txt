@@ -3,3 +3,5 @@ torchvision
 streamlit
 joblib
 streamlit-drawable-canvas
+scikit-learn
+scikit-image

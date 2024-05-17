@@ -13,11 +13,16 @@ import joblib
 our_model = joblib.load('./pretrained_model_joblib.pth')
 
 # Define the transformation to apply to the user's drawing
-transform = transforms.Compose([
+'''transform = transforms.Compose([
 transforms.Resize((3, 32, 32)),
 transforms.ToTensor(),
 transforms.Normalize((0.5,), (0.5,))
-])
+])'''
+transform = transforms.Compose([
+        transforms.Grayscale(),
+        transforms.ToTensor(),
+        transforms.Normalize((0.5,), (0.5,))
+        ])
 
 # Specify canvas parameters in application
 drawing_mode = st.sidebar.selectbox(
