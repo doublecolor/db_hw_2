@@ -7,50 +7,38 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 import numpy as np
+import wandb
 
 # Define the CNN module
 class CNN(nn.Module):
     def __init__(self):
         super(CNN, self).__init__()
-        #design CNN model for SVHN dataset
-        self.conv1 = nn.Conv2d(3, 6, 5)
-        self.pool = nn.MaxPool2d(2, 2)
-        self.conv2 = nn.Conv2d(6, 16, 5)
-        self.fc1 = nn.Linear(16 * 5 * 5, 120)
-        self.fc2 = nn.Linear(120, 84)
-        self.fc3 = nn.Linear(84, 10)
+        self.conv1 = nn.Conv2d(1, 16, kernel_size=3, stride=1, padding=1)
+        self.relu = nn.ReLU()
+        self.maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.conv2 = nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1)
+        self.fc = nn.Linear(32 * 7 * 7, 10)
 
     def forward(self, x):
-        x = self.pool(F.relu(self.conv1(x)))
-        x = self.pool(F.relu(self.conv2(x)))
-        x = x.view(-1, 16 * 5 * 5)
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
+        x = self.conv1(x)
+        x = self.relu(x)
+        x = self.maxpool(x)
+        x = self.conv2(x)
+        x = self.relu(x)
+        x = self.maxpool(x)
+        x = x.view(x.size(0), -1)
+        x = self.fc(x)
         return x
-
+    
     def predict_dight(self, x):
         with torch.no_grad():
             output = self(x)
             _, predicted = torch.max(output.data, 1)
             return predicted.item()
         
-def convert_mnist_to_svhn(mnist_dataset):
-    # Convert MNIST dataset to SVHN format
-    svhn_dataset = []
-    for image, label in mnist_dataset:
-        image = image.squeeze().numpy()
-        image = resize(image, (32, 32), mode='constant')
-        # print(image.shape)
-        image = np.stack((image,)*3, axis=-1)
-        # print(image.shape)
-        # image = (image - 0.1307) / 0.3081
-        image = torch.tensor(image).permute(2, 0, 1)
-        svhn_dataset.append((image, label))
-
-    return svhn_dataset
-        
 def train_model(model, trainloader, criterion, optimizer, num_epochs=10):
+
+    wandb.watch(model, criterion, log="all", log_freq=10)
     # train model with dataset
     for epoch in range(num_epochs):
         running_loss = 0.0
@@ -175,6 +163,24 @@ def main():
     import pickle
     with open('pretrained_model_pickle.pkl', 'wb') as f:
         pickle.dump(model, f)
+
+def sweep_hyperparameters():
+    # Sweep hyperparameters
+    wandb.init(project='continual-learning')
+    wandb.login(key='')
+
+def model_pipeline(hyperparameters):
+    # Define the model pipeline
+    with wandb.init(project='continual-learning', config=hyperparameters):
+        config = wandb.config
+
+        model, train_loader, test_loader, criterion, optimizer = train_model(config)
+        print(model)
+        train(model, train_loader, criterion, optimizer, config)
+
+        test(model, test_loader)
+
+    return model
 
 if __name__ == '__main__':
     print('Continual learning script executed as main program')
