@@ -1,0 +1,295 @@
+2024-05-19 23:49:06,378 INFO    Thread-46 (_run_job):19216 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-19 23:49:06,378 INFO    Thread-46 (_run_job):19216 [wandb_setup.py:_flush():76] Configure stats pid to 19216
+2024-05-19 23:49:06,378 INFO    Thread-46 (_run_job):19216 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-19 23:49:06,378 INFO    Thread-46 (_run_job):19216 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-19 23:49:06,378 INFO    Thread-46 (_run_job):19216 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'your_project_name', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'run_id': 'tghdounr', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-hm4zo0am/config-tghdounr.yaml', 'sweep_id': 'hm4zo0am'}
+2024-05-19 23:49:06,378 INFO    Thread-46 (_run_job):19216 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-19 23:49:06,379 INFO    Thread-46 (_run_job):19216 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-19 23:49:06,379 INFO    Thread-46 (_run_job):19216 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-19 23:49:06,379 INFO    Thread-46 (_run_job):19216 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240519_234906-tghdounr/logs/debug.log
+2024-05-19 23:49:06,379 INFO    Thread-46 (_run_job):19216 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240519_234906-tghdounr/logs/debug-internal.log
+2024-05-19 23:49:06,379 INFO    Thread-46 (_run_job):19216 [wandb_init.py:_jupyter_setup():466] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f779c1c03e0>
+2024-05-19 23:49:06,379 INFO    Thread-46 (_run_job):19216 [wandb_init.py:init():560] calling init triggers
+2024-05-19 23:49:06,379 INFO    Thread-46 (_run_job):19216 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 16, 'classes': 10, 'epochs': 10, 'learning_rate': 0.07126019794958914}
+config: {}
+2024-05-19 23:49:06,379 INFO    Thread-46 (_run_job):19216 [wandb_init.py:init():610] starting backend
+2024-05-19 23:49:06,379 INFO    Thread-46 (_run_job):19216 [wandb_init.py:init():614] setting up manager
+2024-05-19 23:49:06,381 INFO    Thread-46 (_run_job):19216 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-19 23:49:06,382 INFO    Thread-46 (_run_job):19216 [wandb_init.py:init():622] backend started and connected
+2024-05-19 23:49:06,391 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 16, 'classes': 10, 'epochs': 10, 'learning_rate': 0.07126019794958914}
+2024-05-19 23:49:06,393 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-19 23:49:06,393 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-19 23:49:06,393 INFO    Thread-46 (_run_job):19216 [wandb_init.py:init():711] updated telemetry
+2024-05-19 23:49:06,396 INFO    Thread-46 (_run_job):19216 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-19 23:49:07,083 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-19 23:49:07,854 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_on_init():2405] got version response 
+2024-05-19 23:49:07,854 INFO    Thread-46 (_run_job):19216 [wandb_init.py:init():795] starting run threads in backend
+2024-05-19 23:49:11,793 ERROR   Thread-46 (_run_job):19216 [wandb_init.py:init():1174] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1164, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 837, in init
+    run._on_start()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2414, in _on_start
+    self._header(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 3591, in _header
+    Run._header_wandb_version_info(settings=settings, printer=printer)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 3624, in _header_wandb_version_info
+    printer.display(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/printer.py", line 68, in display
+    self._display(text, level=level, default_text=default_text)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/printer.py", line 248, in _display
+    self._display_fn_mapping(level)(text)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/ipython.py", line 81, in display_html
+    return display(HTML(html))
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/IPython/core/display_functions.py", line 305, in display
+    publish_display_data(data=format_dict, metadata=md_dict, **kwargs)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/IPython/core/display_functions.py", line 93, in publish_display_data
+    display_pub.publish(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 477, in publish
+    ipython.display_pub._orig_publish(data, metadata=metadata, **kwargs)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/zmqshell.py", line 103, in publish
+    self._flush_streams()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/zmqshell.py", line 66, in _flush_streams
+    sys.stdout.flush()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 573, in flush
+    self.pub_thread.schedule(self._flush)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 266, in schedule
+    self._event_pipe.send(b"")
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/zmq/sugar/socket.py", line 696, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "zmq/backend/cython/socket.pyx", line 742, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 783, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 138, in zmq.backend.cython.socket._check_closed
+zmq.error.ZMQError: Socket operation on non-socket
+2024-05-19 23:49:11,935 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_finish():2103] finishing run ymkim78/your_project_name/tghdounr
+2024-05-19 23:49:11,935 INFO    Thread-46 (_run_job):19216 [jupyter.py:save_history():445] not saving jupyter history
+2024-05-19 23:49:11,935 INFO    Thread-46 (_run_job):19216 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-19 23:49:11,935 INFO    Thread-46 (_run_job):19216 [wandb_init.py:_jupyter_teardown():448] cleaning up jupyter logic
+2024-05-19 23:49:11,935 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-19 23:49:11,935 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_restore():2326] restore
+2024-05-19 23:49:11,935 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_restore():2332] restore done
+2024-05-19 23:49:13,937 ERROR   Thread-46 (_run_job):19216 [ipython.py:update():120] Socket operation on non-socket
+Traceback (most recent call last):
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 307, in _run_job
+    self._function()
+  File "/tmp/ipykernel_19216/2229655354.py", line 6, in train_with_wandb
+    with wandb.init() as run:
+         ^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1178, in init
+    wandb._sentry.reraise(e)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/analytics/sentry.py", line 155, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1164, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 837, in init
+    run._on_start()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2414, in _on_start
+    self._header(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 3591, in _header
+    Run._header_wandb_version_info(settings=settings, printer=printer)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 3624, in _header_wandb_version_info
+    printer.display(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/printer.py", line 68, in display
+    self._display(text, level=level, default_text=default_text)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/printer.py", line 248, in _display
+    self._display_fn_mapping(level)(text)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/ipython.py", line 81, in display_html
+    return display(HTML(html))
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/IPython/core/display_functions.py", line 305, in display
+    publish_display_data(data=format_dict, metadata=md_dict, **kwargs)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/IPython/core/display_functions.py", line 93, in publish_display_data
+    display_pub.publish(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 477, in publish
+    ipython.display_pub._orig_publish(data, metadata=metadata, **kwargs)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/zmqshell.py", line 103, in publish
+    self._flush_streams()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/zmqshell.py", line 66, in _flush_streams
+    sys.stdout.flush()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 573, in flush
+    self.pub_thread.schedule(self._flush)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 266, in schedule
+    self._event_pipe.send(b"")
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/zmq/sugar/socket.py", line 696, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "zmq/backend/cython/socket.pyx", line 742, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 783, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 138, in zmq.backend.cython.socket._check_closed
+zmq.error.ZMQError: Socket operation on non-socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/ipython.py", line 113, in update
+    self._progress.value = value
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/traitlets/traitlets.py", line 729, in __set__
+    self.set(obj, value)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/traitlets/traitlets.py", line 718, in set
+    obj._notify_trait(self.name, old_value, new_value)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/traitlets/traitlets.py", line 1501, in _notify_trait
+    self.notify_change(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipywidgets/widgets/widget.py", line 686, in notify_change
+    self.send_state(key=name)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipywidgets/widgets/widget.py", line 555, in send_state
+    self._send(msg, buffers=buffers)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipywidgets/widgets/widget.py", line 818, in _send
+    self.comm.send(data=msg, buffers=buffers)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/comm/base_comm.py", line 147, in send
+    self.publish_msg(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/comm/comm.py", line 37, in publish_msg
+    self.kernel.session.send(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/jupyter_client/session.py", line 863, in send
+    stream.send_multipart(to_send, copy=copy)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 345, in send_multipart
+    return self.io_thread.send_multipart(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 275, in send_multipart
+    self.schedule(lambda: self._really_send(*args, **kwargs))
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 266, in schedule
+    self._event_pipe.send(b"")
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/zmq/sugar/socket.py", line 696, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "zmq/backend/cython/socket.pyx", line 742, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 783, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 138, in zmq.backend.cython.socket._check_closed
+zmq.error.ZMQError: Socket operation on non-socket
+2024-05-19 23:49:13,940 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_restore():2326] restore
+2024-05-19 23:49:13,940 INFO    Thread-46 (_run_job):19216 [wandb_run.py:_restore():2332] restore done
+2024-05-19 23:49:14,970 ERROR   Thread-46 (_run_job):19216 [wandb_run.py:_atexit_cleanup():2364] Problem finishing run
+Traceback (most recent call last):
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 307, in _run_job
+    self._function()
+  File "/tmp/ipykernel_19216/2229655354.py", line 6, in train_with_wandb
+    with wandb.init() as run:
+         ^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1178, in init
+    wandb._sentry.reraise(e)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/analytics/sentry.py", line 155, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1164, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 837, in init
+    run._on_start()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2414, in _on_start
+    self._header(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 3591, in _header
+    Run._header_wandb_version_info(settings=settings, printer=printer)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 3624, in _header_wandb_version_info
+    printer.display(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/printer.py", line 68, in display
+    self._display(text, level=level, default_text=default_text)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/printer.py", line 248, in _display
+    self._display_fn_mapping(level)(text)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/ipython.py", line 81, in display_html
+    return display(HTML(html))
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/IPython/core/display_functions.py", line 305, in display
+    publish_display_data(data=format_dict, metadata=md_dict, **kwargs)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/IPython/core/display_functions.py", line 93, in publish_display_data
+    display_pub.publish(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 477, in publish
+    ipython.display_pub._orig_publish(data, metadata=metadata, **kwargs)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/zmqshell.py", line 103, in publish
+    self._flush_streams()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/zmqshell.py", line 66, in _flush_streams
+    sys.stdout.flush()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 573, in flush
+    self.pub_thread.schedule(self._flush)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 266, in schedule
+    self._event_pipe.send(b"")
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/zmq/sugar/socket.py", line 696, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "zmq/backend/cython/socket.pyx", line 742, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 783, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 138, in zmq.backend.cython.socket._check_closed
+zmq.error.ZMQError: Socket operation on non-socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/ipython.py", line 113, in update
+    self._progress.value = value
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/traitlets/traitlets.py", line 729, in __set__
+    self.set(obj, value)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/traitlets/traitlets.py", line 718, in set
+    obj._notify_trait(self.name, old_value, new_value)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/traitlets/traitlets.py", line 1501, in _notify_trait
+    self.notify_change(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipywidgets/widgets/widget.py", line 686, in notify_change
+    self.send_state(key=name)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipywidgets/widgets/widget.py", line 555, in send_state
+    self._send(msg, buffers=buffers)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipywidgets/widgets/widget.py", line 818, in _send
+    self.comm.send(data=msg, buffers=buffers)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/comm/base_comm.py", line 147, in send
+    self.publish_msg(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/comm/comm.py", line 37, in publish_msg
+    self.kernel.session.send(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/jupyter_client/session.py", line 863, in send
+    stream.send_multipart(to_send, copy=copy)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 345, in send_multipart
+    return self.io_thread.send_multipart(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 275, in send_multipart
+    self.schedule(lambda: self._really_send(*args, **kwargs))
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 266, in schedule
+    self._event_pipe.send(b"")
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/zmq/sugar/socket.py", line 696, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "zmq/backend/cython/socket.pyx", line 742, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 783, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 138, in zmq.backend.cython.socket._check_closed
+zmq.error.ZMQError: Socket operation on non-socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2352, in _atexit_cleanup
+    self._on_finish()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2608, in _on_finish
+    _ = exit_handle.wait(timeout=-1, on_progress=self._on_progress_exit)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/mailbox.py", line 303, in wait
+    on_progress(progress_handle)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2587, in _on_progress_exit
+    self._footer_file_pusher_status_info(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 3807, in _footer_file_pusher_status_info
+    Run._footer_single_run_file_pusher_status_info(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 3858, in _footer_single_run_file_pusher_status_info
+    printer.progress_update(line, percent_done)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/printer.py", line 288, in progress_update
+    self._progress.update(percent_done, text)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/lib/ipython.py", line 121, in update
+    wandb.termwarn(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/errors/term.py", line 53, in termwarn
+    _log(
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 662, in write
+    self._schedule_flush()
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 559, in _schedule_flush
+    self.pub_thread.schedule(_schedule_in_thread)
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/ipykernel/iostream.py", line 266, in schedule
+    self._event_pipe.send(b"")
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/zmq/sugar/socket.py", line 696, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "zmq/backend/cython/socket.pyx", line 742, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 783, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 138, in zmq.backend.cython.socket._check_closed
+zmq.error.ZMQError: Socket operation on non-socket

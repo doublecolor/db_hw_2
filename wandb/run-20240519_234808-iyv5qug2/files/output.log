@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/tmp/ipykernel_19216/1057894848.py", line 9, in model_pipeline
+    model, train_loader, test_loader, criterion, optimizer = make(config)
+                                                             ^^^^^^^^^^^^
+  File "/tmp/ipykernel_19216/3480473988.py", line 4, in make
+    train_loader = make_loader(train, batch_size=config.batch_size)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_19216/1730621210.py", line 16, in make_loader
+    return loader
+           ^^^^^^
+UnboundLocalError: cannot access local variable 'loader' where it is not associated with a value

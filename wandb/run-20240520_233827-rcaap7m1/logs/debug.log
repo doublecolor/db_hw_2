@@ -1,0 +1,447 @@
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_233827-rcaap7m1/logs/debug.log
+2024-05-20 23:38:27,589 INFO    MainThread:8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_233827-rcaap7m1/logs/debug-internal.log
+2024-05-20 23:38:27,590 INFO    MainThread:8441 [wandb_init.py:_jupyter_setup():466] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f3811ab75f0>
+2024-05-20 23:38:27,590 INFO    MainThread:8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:38:27,590 INFO    MainThread:8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-05-20 23:38:27,590 INFO    MainThread:8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:38:27,590 INFO    MainThread:8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:38:27,591 INFO    MainThread:8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:38:27,592 INFO    MainThread:8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:38:27,599 INFO    MainThread:8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:38:27,600 INFO    MainThread:8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:38:27,600 INFO    MainThread:8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:38:27,654 INFO    MainThread:8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:38:28,362 INFO    MainThread:8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:38:29,136 INFO    MainThread:8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:38:29,136 INFO    MainThread:8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:38:33,071 INFO    MainThread:8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:38:33,071 INFO    MainThread:8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:38:33,072 INFO    MainThread:8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:38:33,072 INFO    MainThread:8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:38:33,074 INFO    MainThread:8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:38:33,076 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:38:33,077 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:38:33,092 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:38:33,093 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:38:33,093 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:38:33,111 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:38:33,115 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:38:33,115 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:38:33,133 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:38:33,141 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:38:33,141 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:38:33,156 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:38:33,162 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:38:33,162 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:38:33,180 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:38:33,187 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:38:33,187 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:38:33,211 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:38:33,809 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:38:33,810 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:38:33,823 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:38:33,824 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:38:33,824 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:38:34,644 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:38:34,646 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:38:34,647 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:38:59,728 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:38:59,730 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:38:59,730 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:39:29,745 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:39:29,746 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:39:29,746 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-20 23:39:33,344 INFO    MainThread:8441 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-20 23:39:33,346 INFO    MainThread:8441 [pyagent.py:run():323] Starting sweep agent: entity=None, project=None, count=10
+2024-05-20 23:39:41,568 WARNING MsgRouterThr:8441 [router.py:message_loop():77] message_loop has been closed
+2024-05-20 23:39:42,601 ERROR   Thread-8 (_run_job):8441 [jupyter.py:notebook_metadata():224] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2024-05-20 23:39:43,842 INFO    Thread-8 (_run_job):8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'pytorch-sweeps-demo-hw3', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'sweep_id': '5ohs6n3z', 'run_id': 'u1vjjchc', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-5ohs6n3z/config-u1vjjchc.yaml'}
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_233943-u1vjjchc/logs/debug.log
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_233943-u1vjjchc/logs/debug-internal.log
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 192, 'dropout': 0.3, 'epochs': 5, 'fc_layer_size': 128, 'learning_rate': 0.042007047589339014, 'optimizer': 'adam'}
+config: {}
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:39:43,843 INFO    Thread-8 (_run_job):8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:39:43,847 INFO    Thread-8 (_run_job):8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:39:43,847 INFO    Thread-8 (_run_job):8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:39:43,857 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 192, 'dropout': 0.3, 'epochs': 5, 'fc_layer_size': 128, 'learning_rate': 0.042007047589339014, 'optimizer': 'adam'}
+2024-05-20 23:39:43,858 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:39:43,858 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:39:43,858 INFO    Thread-8 (_run_job):8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:39:43,861 INFO    Thread-8 (_run_job):8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:39:44,558 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:39:45,338 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:39:45,338 INFO    Thread-8 (_run_job):8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:39:49,284 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:39:49,284 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:39:49,285 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:39:49,285 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:39:49,286 INFO    Thread-8 (_run_job):8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:41:09,286 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_finish():2103] finishing run ymkim78/pytorch-sweeps-demo-hw3/u1vjjchc
+2024-05-20 23:41:09,286 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-20 23:41:09,287 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_restore():2326] restore
+2024-05-20 23:41:09,287 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_restore():2332] restore done
+2024-05-20 23:41:12,834 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 23:41:12,835 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 23:41:12,838 INFO    Thread-8 (_run_job):8441 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 23:41:16,032 ERROR   Thread-11 (_run_job):8441 [jupyter.py:notebook_metadata():224] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2024-05-20 23:41:17,279 INFO    Thread-11 (_run_job):8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:41:17,279 INFO    Thread-11 (_run_job):8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:41:17,279 INFO    Thread-11 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:41:17,279 INFO    Thread-11 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:41:17,279 INFO    Thread-11 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'pytorch-sweeps-demo-hw3', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'run_id': 'jmez332e', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-5ohs6n3z/config-jmez332e.yaml', 'sweep_id': '5ohs6n3z'}
+2024-05-20 23:41:17,279 INFO    Thread-11 (_run_job):8441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 23:41:17,279 INFO    Thread-11 (_run_job):8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:41:17,279 INFO    Thread-11 (_run_job):8441 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-20 23:41:17,280 INFO    Thread-11 (_run_job):8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_234117-jmez332e/logs/debug.log
+2024-05-20 23:41:17,280 INFO    Thread-11 (_run_job):8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_234117-jmez332e/logs/debug-internal.log
+2024-05-20 23:41:17,280 INFO    Thread-11 (_run_job):8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:41:17,280 INFO    Thread-11 (_run_job):8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 88, 'dropout': 0.3, 'epochs': 5, 'fc_layer_size': 512, 'learning_rate': 0.01699405359463594, 'optimizer': 'adam'}
+config: {}
+2024-05-20 23:41:17,280 INFO    Thread-11 (_run_job):8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:41:17,280 INFO    Thread-11 (_run_job):8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:41:17,282 INFO    Thread-11 (_run_job):8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:41:17,283 INFO    Thread-11 (_run_job):8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:41:17,293 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 88, 'dropout': 0.3, 'epochs': 5, 'fc_layer_size': 512, 'learning_rate': 0.01699405359463594, 'optimizer': 'adam'}
+2024-05-20 23:41:17,294 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:41:17,294 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:41:17,294 INFO    Thread-11 (_run_job):8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:41:17,297 INFO    Thread-11 (_run_job):8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:41:18,069 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:41:18,843 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:41:18,843 INFO    Thread-11 (_run_job):8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:41:22,659 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:41:22,659 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:41:22,659 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:41:22,659 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:41:22,660 INFO    Thread-11 (_run_job):8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:42:47,160 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_finish():2103] finishing run ymkim78/pytorch-sweeps-demo-hw3/jmez332e
+2024-05-20 23:42:47,160 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-20 23:42:47,161 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_restore():2326] restore
+2024-05-20 23:42:47,161 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_restore():2332] restore done
+2024-05-20 23:42:51,192 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 23:42:51,192 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 23:42:51,196 INFO    Thread-11 (_run_job):8441 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 23:42:55,333 ERROR   Thread-14 (_run_job):8441 [jupyter.py:notebook_metadata():224] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'pytorch-sweeps-demo-hw3', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'run_id': '7271mhti', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-5ohs6n3z/config-7271mhti.yaml', 'sweep_id': '5ohs6n3z'}
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_234256-7271mhti/logs/debug.log
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_234256-7271mhti/logs/debug-internal.log
+2024-05-20 23:42:56,593 INFO    Thread-14 (_run_job):8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:42:56,594 INFO    Thread-14 (_run_job):8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 216, 'dropout': 0.3, 'epochs': 5, 'fc_layer_size': 128, 'learning_rate': 0.04637293720122098, 'optimizer': 'adam'}
+config: {}
+2024-05-20 23:42:56,594 INFO    Thread-14 (_run_job):8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:42:56,594 INFO    Thread-14 (_run_job):8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:42:56,596 INFO    Thread-14 (_run_job):8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:42:56,597 INFO    Thread-14 (_run_job):8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:42:56,607 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 216, 'dropout': 0.3, 'epochs': 5, 'fc_layer_size': 128, 'learning_rate': 0.04637293720122098, 'optimizer': 'adam'}
+2024-05-20 23:42:56,608 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:42:56,608 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:42:56,608 INFO    Thread-14 (_run_job):8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:42:56,611 INFO    Thread-14 (_run_job):8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:42:57,316 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:42:58,094 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:42:58,094 INFO    Thread-14 (_run_job):8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:43:01,906 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:43:01,906 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:43:01,907 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:43:01,907 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:43:01,908 INFO    Thread-14 (_run_job):8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:44:21,498 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_finish():2103] finishing run ymkim78/pytorch-sweeps-demo-hw3/7271mhti
+2024-05-20 23:44:21,498 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-20 23:44:21,499 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_restore():2326] restore
+2024-05-20 23:44:21,499 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_restore():2332] restore done
+2024-05-20 23:44:25,458 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 23:44:25,458 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 23:44:25,462 INFO    Thread-14 (_run_job):8441 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 23:44:30,596 ERROR   Thread-17 (_run_job):8441 [jupyter.py:notebook_metadata():224] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2024-05-20 23:44:31,843 INFO    Thread-17 (_run_job):8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:44:31,843 INFO    Thread-17 (_run_job):8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'pytorch-sweeps-demo-hw3', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'run_id': '2t99czcx', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-5ohs6n3z/config-2t99czcx.yaml', 'sweep_id': '5ohs6n3z'}
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_234431-2t99czcx/logs/debug.log
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_234431-2t99czcx/logs/debug-internal.log
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 48, 'dropout': 0.5, 'epochs': 5, 'fc_layer_size': 128, 'learning_rate': 0.08374858131974124, 'optimizer': 'adam'}
+config: {}
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:44:31,844 INFO    Thread-17 (_run_job):8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:44:31,848 INFO    Thread-17 (_run_job):8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:44:31,848 INFO    Thread-17 (_run_job):8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:44:31,859 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 48, 'dropout': 0.5, 'epochs': 5, 'fc_layer_size': 128, 'learning_rate': 0.08374858131974124, 'optimizer': 'adam'}
+2024-05-20 23:44:31,860 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:44:31,860 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:44:31,860 INFO    Thread-17 (_run_job):8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:44:31,863 INFO    Thread-17 (_run_job):8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:44:32,556 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:44:33,333 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:44:33,333 INFO    Thread-17 (_run_job):8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:44:37,309 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:44:37,309 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:44:37,309 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:44:37,309 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:44:37,310 INFO    Thread-17 (_run_job):8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:46:21,697 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_finish():2103] finishing run ymkim78/pytorch-sweeps-demo-hw3/2t99czcx
+2024-05-20 23:46:21,698 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-20 23:46:21,698 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_restore():2326] restore
+2024-05-20 23:46:21,698 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_restore():2332] restore done
+2024-05-20 23:46:25,595 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 23:46:25,595 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 23:46:25,601 INFO    Thread-17 (_run_job):8441 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 23:46:36,742 ERROR   Thread-20 (_run_job):8441 [jupyter.py:notebook_metadata():224] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'pytorch-sweeps-demo-hw3', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'run_id': '4xi9uj0z', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-5ohs6n3z/config-4xi9uj0z.yaml', 'sweep_id': '5ohs6n3z'}
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_234637-4xi9uj0z/logs/debug.log
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_234637-4xi9uj0z/logs/debug-internal.log
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 88, 'dropout': 0.5, 'epochs': 5, 'fc_layer_size': 512, 'learning_rate': 0.021407247176967195, 'optimizer': 'adam'}
+config: {}
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:46:37,995 INFO    Thread-20 (_run_job):8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:46:37,999 INFO    Thread-20 (_run_job):8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:46:37,999 INFO    Thread-20 (_run_job):8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:46:38,009 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 88, 'dropout': 0.5, 'epochs': 5, 'fc_layer_size': 512, 'learning_rate': 0.021407247176967195, 'optimizer': 'adam'}
+2024-05-20 23:46:38,010 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:46:38,011 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:46:38,011 INFO    Thread-20 (_run_job):8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:46:38,015 INFO    Thread-20 (_run_job):8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:46:38,734 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:46:39,509 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:46:39,509 INFO    Thread-20 (_run_job):8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:46:44,488 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:46:44,489 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:46:44,489 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:46:44,489 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:46:44,490 INFO    Thread-20 (_run_job):8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:48:21,619 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_finish():2103] finishing run ymkim78/pytorch-sweeps-demo-hw3/4xi9uj0z
+2024-05-20 23:48:21,619 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-20 23:48:21,619 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_restore():2326] restore
+2024-05-20 23:48:21,620 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_restore():2332] restore done
+2024-05-20 23:48:26,530 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 23:48:26,530 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 23:48:26,536 INFO    Thread-20 (_run_job):8441 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 23:48:37,707 ERROR   Thread-23 (_run_job):8441 [jupyter.py:notebook_metadata():224] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'pytorch-sweeps-demo-hw3', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'run_id': 'gbzvw1lx', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-5ohs6n3z/config-gbzvw1lx.yaml', 'sweep_id': '5ohs6n3z'}
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_234839-gbzvw1lx/logs/debug.log
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_234839-gbzvw1lx/logs/debug-internal.log
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 64, 'dropout': 0.4, 'epochs': 10, 'fc_layer_size': 256, 'learning_rate': 0.04731551804655845, 'optimizer': 'sgd'}
+config: {}
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:48:39,344 INFO    Thread-23 (_run_job):8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:48:39,347 INFO    Thread-23 (_run_job):8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:48:39,348 INFO    Thread-23 (_run_job):8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:48:39,358 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 64, 'dropout': 0.4, 'epochs': 10, 'fc_layer_size': 256, 'learning_rate': 0.04731551804655845, 'optimizer': 'sgd'}
+2024-05-20 23:48:39,360 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:48:39,360 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:48:39,360 INFO    Thread-23 (_run_job):8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:48:39,363 INFO    Thread-23 (_run_job):8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:48:40,049 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:48:40,825 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:48:40,825 INFO    Thread-23 (_run_job):8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:48:45,326 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:48:45,326 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:48:45,326 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:48:45,327 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:48:45,328 INFO    Thread-23 (_run_job):8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:51:05,502 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_finish():2103] finishing run ymkim78/pytorch-sweeps-demo-hw3/gbzvw1lx
+2024-05-20 23:51:05,502 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-20 23:51:05,502 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_restore():2326] restore
+2024-05-20 23:51:05,502 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_restore():2332] restore done
+2024-05-20 23:51:09,681 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 23:51:09,681 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 23:51:09,686 INFO    Thread-23 (_run_job):8441 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 23:51:14,826 ERROR   Thread-26 (_run_job):8441 [jupyter.py:notebook_metadata():224] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2024-05-20 23:51:16,118 INFO    Thread-26 (_run_job):8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:51:16,118 INFO    Thread-26 (_run_job):8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'pytorch-sweeps-demo-hw3', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'run_id': 'go2gnazk', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-5ohs6n3z/config-go2gnazk.yaml', 'sweep_id': '5ohs6n3z'}
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_235116-go2gnazk/logs/debug.log
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_235116-go2gnazk/logs/debug-internal.log
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 128, 'dropout': 0.3, 'epochs': 10, 'fc_layer_size': 256, 'learning_rate': 0.0979741379140286, 'optimizer': 'sgd'}
+config: {}
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:51:16,119 INFO    Thread-26 (_run_job):8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:51:16,122 INFO    Thread-26 (_run_job):8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:51:16,122 INFO    Thread-26 (_run_job):8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:51:16,132 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 128, 'dropout': 0.3, 'epochs': 10, 'fc_layer_size': 256, 'learning_rate': 0.0979741379140286, 'optimizer': 'sgd'}
+2024-05-20 23:51:16,133 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:51:16,133 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:51:16,133 INFO    Thread-26 (_run_job):8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:51:16,136 INFO    Thread-26 (_run_job):8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:51:16,810 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:51:17,586 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:51:17,586 INFO    Thread-26 (_run_job):8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:51:21,459 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:51:21,459 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:51:21,459 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:51:21,459 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:51:21,460 INFO    Thread-26 (_run_job):8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:53:23,365 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_finish():2103] finishing run ymkim78/pytorch-sweeps-demo-hw3/go2gnazk
+2024-05-20 23:53:23,366 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-20 23:53:23,366 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_restore():2326] restore
+2024-05-20 23:53:23,366 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_restore():2332] restore done
+2024-05-20 23:53:26,684 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 23:53:26,684 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 23:53:26,689 INFO    Thread-26 (_run_job):8441 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 23:53:31,873 ERROR   Thread-29 (_run_job):8441 [jupyter.py:notebook_metadata():224] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'pytorch-sweeps-demo-hw3', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'run_id': 'bn69o9gg', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-5ohs6n3z/config-bn69o9gg.yaml', 'sweep_id': '5ohs6n3z'}
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_235333-bn69o9gg/logs/debug.log
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_235333-bn69o9gg/logs/debug-internal.log
+2024-05-20 23:53:33,133 INFO    Thread-29 (_run_job):8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:53:33,134 INFO    Thread-29 (_run_job):8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 224, 'dropout': 0.4, 'epochs': 10, 'fc_layer_size': 128, 'learning_rate': 0.07022657530788005, 'optimizer': 'adam'}
+config: {}
+2024-05-20 23:53:33,134 INFO    Thread-29 (_run_job):8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:53:33,134 INFO    Thread-29 (_run_job):8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:53:33,136 INFO    Thread-29 (_run_job):8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:53:33,136 INFO    Thread-29 (_run_job):8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:53:33,147 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 224, 'dropout': 0.4, 'epochs': 10, 'fc_layer_size': 128, 'learning_rate': 0.07022657530788005, 'optimizer': 'adam'}
+2024-05-20 23:53:33,148 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:53:33,148 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:53:33,148 INFO    Thread-29 (_run_job):8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:53:33,151 INFO    Thread-29 (_run_job):8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:53:33,837 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:53:34,608 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:53:34,609 INFO    Thread-29 (_run_job):8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:53:38,476 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:53:38,476 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:53:38,476 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:53:38,477 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:53:38,477 INFO    Thread-29 (_run_job):8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:55:37,612 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_finish():2103] finishing run ymkim78/pytorch-sweeps-demo-hw3/bn69o9gg
+2024-05-20 23:55:37,613 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-20 23:55:37,613 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_restore():2326] restore
+2024-05-20 23:55:37,613 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_restore():2332] restore done
+2024-05-20 23:55:42,128 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 23:55:42,129 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 23:55:42,132 INFO    Thread-29 (_run_job):8441 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 23:55:53,302 ERROR   Thread-32 (_run_job):8441 [jupyter.py:notebook_metadata():224] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2024-05-20 23:55:54,565 INFO    Thread-32 (_run_job):8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'pytorch-sweeps-demo-hw3', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'run_id': '9fvrj4e0', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-5ohs6n3z/config-9fvrj4e0.yaml', 'sweep_id': '5ohs6n3z'}
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_235554-9fvrj4e0/logs/debug.log
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_235554-9fvrj4e0/logs/debug-internal.log
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 32, 'dropout': 0.3, 'epochs': 5, 'fc_layer_size': 128, 'learning_rate': 0.02953642054960983, 'optimizer': 'sgd'}
+config: {}
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:55:54,566 INFO    Thread-32 (_run_job):8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:55:54,568 INFO    Thread-32 (_run_job):8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:55:54,569 INFO    Thread-32 (_run_job):8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:55:54,581 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 32, 'dropout': 0.3, 'epochs': 5, 'fc_layer_size': 128, 'learning_rate': 0.02953642054960983, 'optimizer': 'sgd'}
+2024-05-20 23:55:54,582 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:55:54,582 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:55:54,582 INFO    Thread-32 (_run_job):8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:55:54,585 INFO    Thread-32 (_run_job):8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:55:55,254 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:55:56,029 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:55:56,029 INFO    Thread-32 (_run_job):8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:56:00,291 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:56:00,292 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:56:00,292 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:56:00,292 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:56:00,293 INFO    Thread-32 (_run_job):8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:57:48,319 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_finish():2103] finishing run ymkim78/pytorch-sweeps-demo-hw3/9fvrj4e0
+2024-05-20 23:57:48,319 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-20 23:57:48,319 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_restore():2326] restore
+2024-05-20 23:57:48,319 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_restore():2332] restore done
+2024-05-20 23:57:52,600 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 23:57:52,600 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 23:57:52,606 INFO    Thread-32 (_run_job):8441 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 23:57:54,784 ERROR   Thread-35 (_run_job):8441 [jupyter.py:notebook_metadata():224] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_setup.py:_flush():76] Configure stats pid to 8441
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from /home/student/db_hw_2/wandb/settings
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'pytorch-sweeps-demo-hw3', 'entity': 'ymkim78', 'root_dir': '/home/student/db_hw_2', 'run_id': 'xrhob36k', 'sweep_param_path': '/home/student/db_hw_2/wandb/sweep-5ohs6n3z/config-xrhob36k.yaml', 'sweep_id': '5ohs6n3z'}
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/db_hw_2/wandb/run-20240520_235756-xrhob36k/logs/debug.log
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/db_hw_2/wandb/run-20240520_235756-xrhob36k/logs/debug-internal.log
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_init.py:init():560] calling init triggers
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_init.py:init():567] wandb.init called with sweep_config: {'batch_size': 136, 'dropout': 0.5, 'epochs': 5, 'fc_layer_size': 128, 'learning_rate': 0.06020837233967597, 'optimizer': 'adam'}
+config: {}
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_init.py:init():610] starting backend
+2024-05-20 23:57:56,240 INFO    Thread-35 (_run_job):8441 [wandb_init.py:init():614] setting up manager
+2024-05-20 23:57:56,243 INFO    Thread-35 (_run_job):8441 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-20 23:57:56,243 INFO    Thread-35 (_run_job):8441 [wandb_init.py:init():622] backend started and connected
+2024-05-20 23:57:56,255 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_config_callback():1376] config_cb None None {'batch_size': 136, 'dropout': 0.5, 'epochs': 5, 'fc_layer_size': 128, 'learning_rate': 0.06020837233967597, 'optimizer': 'adam'}
+2024-05-20 23:57:56,256 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-20 23:57:56,257 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-20 23:57:56,257 INFO    Thread-35 (_run_job):8441 [wandb_init.py:init():711] updated telemetry
+2024-05-20 23:57:56,260 INFO    Thread-35 (_run_job):8441 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-20 23:57:56,924 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-20 23:57:57,711 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_on_init():2405] got version response 
+2024-05-20 23:57:57,711 INFO    Thread-35 (_run_job):8441 [wandb_init.py:init():795] starting run threads in backend
+2024-05-20 23:58:02,220 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-20 23:58:02,221 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-20 23:58:02,221 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-20 23:58:02,221 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-20 23:58:02,222 INFO    Thread-35 (_run_job):8441 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-20 23:59:31,583 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_finish():2103] finishing run ymkim78/pytorch-sweeps-demo-hw3/xrhob36k
+2024-05-20 23:59:31,583 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-20 23:59:31,583 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_restore():2326] restore
+2024-05-20 23:59:31,583 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_restore():2332] restore done
+2024-05-20 23:59:35,331 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-20 23:59:35,331 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-20 23:59:35,337 INFO    Thread-35 (_run_job):8441 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-20 23:59:35,343 INFO    MainThread:8441 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-20 23:59:35,343 INFO    MainThread:8441 [wandb_init.py:_pause_backend():431] pausing backend

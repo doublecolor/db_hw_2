@@ -1,0 +1,107 @@
+{
+    "os": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-05-20T14:26:35.388178",
+    "startedAt": "2024-05-20T14:26:33.880194",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/doublecolor/db_hw_2.git",
+        "commit": "a7db1153d81484985b0f6aa9afa7f97210cd6db2"
+    },
+    "email": "kym990708@gm.gist.ac.kr",
+    "root": "/home/student/db_hw_2",
+    "host": "KYM-PC",
+    "username": "student",
+    "executable": "/home/student/anaconda3/envs/db_hw/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3892.5930000000003,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.593,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 116.94525527954102
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Ti",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.296131134033203
+    }
+}

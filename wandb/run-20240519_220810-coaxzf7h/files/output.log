@@ -1,0 +1,24 @@
+Create sweep with ID: wrbjriur
+Sweep URL: https://wandb.ai/ymkim78/db_hw_3_youngmok_kim/sweeps/wrbjriur
+Continual learning script executed as main program
+[34m[1mwandb[39m[22m: [33mWARNING[39m Changes to your `wandb` environment variables will be ignored because your `wandb` session has already started. For more information on how to modify your settings with `wandb.init()` arguments, please refer to [34m[4mhttps://wandb.me/wandb-init[39m[24m.
+Traceback (most recent call last):
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_config.py", line 162, in __getattr__
+    return self.__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 'num_epochs'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/student/db_hw_2/continual_learning.py", line 226, in <module>
+    main()
+  File "/home/student/db_hw_2/continual_learning.py", line 204, in main
+    train_model(model, mnist_train_loader, criterion, optimizer)
+  File "/home/student/db_hw_2/continual_learning.py", line 84, in train_model
+    for epoch in range(config.num_epochs):
+                       ^^^^^^^^^^^^^^^^^
+  File "/home/student/anaconda3/envs/db_hw/lib/python3.12/site-packages/wandb/sdk/wandb_config.py", line 164, in __getattr__
+    raise AttributeError(
+AttributeError: <class 'wandb.sdk.wandb_config.Config'> object has no attribute 'num_epochs'

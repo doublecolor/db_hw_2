@@ -1,0 +1,5 @@
+
+Continual learning script executed as main program
+Create sweep with ID: btlo1f3x
+Sweep URL: https://wandb.ai/ymkim78/db_hw_3_youngmok_kim/sweeps/btlo1f3x
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
